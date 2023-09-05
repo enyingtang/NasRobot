@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/nas_robot?useSSL=false&autoReconnect=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 20
+      idle-timeout: 500000
+      max-lifetime: 540000
+      connection-timeout: 60000
+      connection-test-query: SELECT 1
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        ddl-auto: create
+    generate-ddl: true
+
+  # App Properties
+nosRebot:
+  app:
+    jwtSecret: ======================BezKoder=Spring===========================
+    jwtExpirationMs: 86400000
