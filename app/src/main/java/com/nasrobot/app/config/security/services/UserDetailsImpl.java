@@ -1,7 +1,7 @@
 package com.nasrobot.app.config.security.services;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.nasrobot.repository.entity.User;
+import com.nasrobot.repository.entity.auth.User;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

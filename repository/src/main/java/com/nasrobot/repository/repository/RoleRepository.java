@@ -1,7 +1,7 @@
 package com.nasrobot.repository.repository;
 
-import com.nasrobot.repository.entity.ERole;
-import com.nasrobot.repository.entity.Role;
+import com.nasrobot.repository.entity.auth.ERole;
+import com.nasrobot.repository.entity.auth.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

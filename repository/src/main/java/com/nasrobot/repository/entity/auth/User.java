@@ -1,4 +1,4 @@
-package com.nasrobot.repository.entity;
+package com.nasrobot.repository.entity.auth;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
