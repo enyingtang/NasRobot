@@ -1,4 +1,4 @@
-package com.nasrobot.repository.repository;
+package com.nasrobot.repository.repository.auth;
 
 import com.nasrobot.repository.entity.auth.ERole;
 import com.nasrobot.repository.entity.auth.Role;

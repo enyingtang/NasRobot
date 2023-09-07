@@ -12,7 +12,7 @@ import lombok.Data;
 public class Site {
     @Id
     @GeneratedValue
-    private String id;
+    private Long id;
     /**
      * 站点名
      */

@@ -28,9 +28,6 @@
 
     <modules>
         <module>app</module>
-        <module>downloader</module>
-        <module>indexer</module>
-        <module>subscription</module>
         <module>repository</module>
         <module>commons</module>
     </modules>

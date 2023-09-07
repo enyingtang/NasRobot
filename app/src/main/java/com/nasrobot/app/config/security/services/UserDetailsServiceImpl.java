@@ -1,7 +1,7 @@
 package com.nasrobot.app.config.security.services;
 
 import com.nasrobot.repository.entity.auth.User;
-import com.nasrobot.repository.repository.UserRepository;
+import com.nasrobot.repository.repository.auth.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
