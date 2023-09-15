@@ -28,14 +28,17 @@ public class Site {
     /**
      * 站点优先级
      */
-    private String seq;
+    private int seq;
     /**
      * rss 订阅地址
      */
     private String rssUrlPath;
+    /**
+     * cookie
+     */
     private String cookie;
     /**
-     * User- Agent
+     * User-Agent
      */
     private String ua;
     /**

@@ -1,7 +1,8 @@
 package com.nasrobot.app.parser;
 
-import org.jsoup.nodes.Document;
+import org.jsoup.Connection;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -12,9 +13,9 @@ public interface DocumentParser<T> {
     /**
      * HTML解析器
      *
-     * @param document html文档
+     * @param connection 链接
      * @return 解析完后的JSON字符串
      */
-    List<T> parse(Document document);
+    List<T> parse(Connection connection) throws IOException;
 
 }

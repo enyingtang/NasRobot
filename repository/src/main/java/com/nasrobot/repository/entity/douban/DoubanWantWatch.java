@@ -7,26 +7,25 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "t_douban_top")
+@Table(name = "t_douban_want_watch")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class DoubanTop {
-
+public class DoubanWantWatch {
     @Id
     @GeneratedValue
-    private String id;
+    private Long id;
     /**
      * 标题
      */
     private String title;
     /**
-     * 副标题
+     * 子标题
      */
-    private String subtitle;
+    private String subTitle;
     /**
-     * 缩略图Url
+     * 缩略图
      */
     private String thumbnailImgUrl;
     /**
@@ -35,17 +34,13 @@ public class DoubanTop {
     @Column(name = "`desc`", length = 2048)
     private String desc;
     /**
-     * 评分
+     * 添加想看日期
      */
-    private String rating;
+    private String wantWatchDate;
     /**
-     * 评价人数
+     * 想看标签
      */
-    private String numberOfReviews;
-    /**
-     * 排序
-     */
-    @Column(name = "`order`")
-    private int order;
+    private String wantWatchTags;
+
 
 }

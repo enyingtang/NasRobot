@@ -17,9 +17,20 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
         ddl-auto: create
     generate-ddl: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:data.sql
+
 
   # App Properties
 nosRebot:
   app:
     jwtSecret: ======================BezKoder=Spring===========================
     jwtExpirationMs: 86400000
+  default:
+    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+  douban:
+    top: https://movie.douban.com/chart
+    want-watch: https://movie.douban.com/mine?status=wish

@@ -23,7 +23,7 @@
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <lombok.version>1.18.28</lombok.version>
         <mysql.version>8.0.33</mysql.version>
-        <mybatis-plus.version>3.5.3.2</mybatis-plus.version>
+        <org.mapstruct.version>1.5.5.Final</org.mapstruct.version>
     </properties>
 
     <modules>
@@ -37,21 +37,6 @@
             <dependency>
                 <groupId>com.yifix</groupId>
                 <artifactId>app</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.yifix</groupId>
-                <artifactId>downloader</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.yifix</groupId>
-                <artifactId>indexer</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.yifix</groupId>
-                <artifactId>subscription</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -102,7 +87,16 @@
                 <artifactId>jsoup</artifactId>
                 <version>1.15.3</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${org.mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>2.6.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -169,14 +163,14 @@
                         </testIncludes>
                         <annotationProcessorPaths>
                             <path>
-                                <groupId>org.mapstruct</groupId>
-                                <artifactId>mapstruct-processor</artifactId>
-                                <version>${mapstruct.version}</version>
-                            </path>
-                            <path>
                                 <groupId>org.projectlombok</groupId>
                                 <artifactId>lombok</artifactId>
                                 <version>${lombok.version}</version>
+                            </path>
+                            <path>
+                                <groupId>org.mapstruct</groupId>
+                                <artifactId>mapstruct-processor</artifactId>
+                                <version>${mapstruct.version}</version>
                             </path>
                             <path>
                                 <groupId>org.springframework.boot</groupId>

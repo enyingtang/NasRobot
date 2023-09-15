@@ -1,9 +1,9 @@
 package com.nasrobot.repository.repository.douban;
 
-import com.nasrobot.repository.entity.douban.DoubanTop;
+import com.nasrobot.repository.entity.douban.DoubanWantWatch;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DoubanTopRepository extends CrudRepository<DoubanTop, String> {
+public interface DoubanWantWatchRepository extends CrudRepository<DoubanWantWatch, String> {
 }

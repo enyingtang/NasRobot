@@ -1,20 +1,24 @@
 package com.nasrobot.repository.entity.system;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "t_init_config")
+@Data
 public class InitConfig {
 
     @Id
     @GeneratedValue
     private Long id;
     /**
+     * 豆瓣URL
+     */
+    private String doubanUrl;
+    /**
      * 豆瓣cookie
      */
+    @Column(length = 2048)
     private String doubanCookie;
     /**
      * plex地址
@@ -23,6 +27,7 @@ public class InitConfig {
     /**
      * plex cookie
      */
+    @Column(length = 2048)
     private String plexCookie;
     /**
      * 媒体目录
