@@ -23,8 +23,8 @@ public class InitConfigCache {
         return initConfig;
     }
 
-    public InitConfig refershInitConfig() {
-        return initConfig = initConfigRepository.findAll().iterator().next();
+    public void refersInitConfig() {
+        initConfig = initConfigRepository.findAll().iterator().next();
     }
 
 }

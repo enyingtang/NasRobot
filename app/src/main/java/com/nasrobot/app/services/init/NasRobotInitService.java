@@ -37,7 +37,7 @@ public class NasRobotInitService {
         initConfigRepository.deleteAll();
         initConfigRepository.save(initConfig);
         // 刷新初始化配置信息缓存
-        initConfigCache.refershInitConfig();
+        initConfigCache.refersInitConfig();
         //刷新豆瓣排行榜
         doubanService.refreshDoubanTop();
         doubanService.refreshMineWantWatchList();
